@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Open food facts</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="rightnav">
+        </div>
+    </div>
+    <div class="leftnav">
+        <form role="search">
+            <input type="text" name="Produit" id="nProduit" placeholder="Entrez un code barre">
+            <button type="submit" id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="button" id="scan_button">Scanners</button>
+        </form>
+    </div>
+    <div class="containerV" id="video_container">
+        <video id="video"></video>
+    </div>
+    <main class="wrapper">
+        <section class="containe" id="demo-content">
+            <div id="button_container" class="" style="display:none">
+                <button type="button" id="startButton">Start</button>
+                <button type="button" id="resetButton">Reset</a>
+            </div>
+
+            <div id="sourceSelectPanel" style="display:none">
+                <label for="sourceSelect">Change video source :</label>
+                <select id="sourceSelect" style="max-width:400px">
+                </select>
+            </div>
+            <!-- <label class="title visually-hidden">Resultat :</label> -->
+            <pre class="title visually-hidden"><code id="result"></code></pre>
+        </section>
+    </main>
+    <div class="card">
+        <!-- <div class="leftimg">
+            <img src="selected_images/front/display/fr" alt="Image du produit">
+        </div>
+        <div class="righttxt">
+            <h1>product_name_fr"-"brands"-"product_quantity"-"product_quantity_unit"</h1>
+            <h2>Code-barres: <span>"code"</span></h2>
+            <h2>Quantité : <span>"product_quantity" : "product_quantity_unit"</span></h2>
+            <h2>Conditionnement : <span>"packaging/packagings/material</span></h2>
+            <h2>Marques : <span>"brands"</span></h2>
+            <h2>Catégorie : <span>"categories_old"</span></h2>
+            <h2>Lieux de fabrication ou de transformation : <span>"manufacturing_places"</span></h2>
+            <h2>Magasins : <span>"stores_tags"</span></h2>
+            <h2>Pays de vente : <span>"countries"</span></h2>
+        </div> -->
+    </div>
+
+    <div class="footer">
+        <!-- <div class="cardbottom">
+        <h2>Correspondance avec vos préférences</h2>
+        <div class="corresp">
+            <div class="sousCard">
+                <img src="" alt="nutriscore">
+                <h2>Nutri-Score nutriscore_grade</h2>
+                <p>Qualité nutritionnelle moyenne</p>
+            </div>
+            <div class="sousCard1">
+                <img src="" alt="novascore">
+                <h2>Aliments ultra-transformés</h2>
+                <p>"nova_groups_markers" Marqueurs d'ultra-transformation</p>
+            </div>
+        </div>
+    </div> -->
+    </div>
+
+
+    <div id="product"></div>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8b462dcb6d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest/umd/index.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+/* Pour titre */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cinzel:wght@400..900&family=Courgette&family=Dancing+Script:wght@400..700&family=Faster+One&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Pour texte */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rightnav h2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.leftnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 37.5rem;
+}
+
+.containerV {
+    display: flex;
+    justify-content: center;
+}
+
+#startButton {
+    margin-right: 1rem;
+}
+
+.containe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#video {
+    flex: 1;
+    padding: 0.62rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#button_container button {
+    background: #88D317;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-right: 0.93rem;
+    padding-left: 0.93rem;
+    padding-bottom: 1.6rem;
+    padding-top: 0.70rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#button_container button:hover {
+    background: #6BB010;
+}
+
+a {
+    text-decoration: none;
+    color: #343A40;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #1A1A1A;
+}
+
+h2 span,
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    color: #1A1A1A;
+}
+
+body {
+    background: #F9F9F9;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: 2px solid black;
+    width: 100%;
+    background: #FF4D4D;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nProduit {
+    flex: 1;
+    padding: 0.62rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-right: 0.62rem;
+}
+
+#search_button {
+    background: #88D317;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-right: 0.93rem;
+    padding-left: 0.93rem;
+    padding-bottom: 1.6rem;
+    padding-top: 0.70rem;
+    cursor: pointer;
+}
+
+#search_button:hover {
+    background: #6BB010;
+}
+
+#scan_button {
+    background: #88D317;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding-right: 0.93rem;
+    padding-left: 0.93rem;
+    padding-bottom: 1.6rem;
+    padding-top: 0.70rem;
+    cursor: pointer;
+}
+
+#scan_button:hover {
+    background-color: #6BB010;
+}
+
+.nameT {
+    color: #FF4D4D;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+button {
+    height: 2rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 6px #F5F5F5;
+    margin-top: 1rem;
+}
+
+.leftimg {
+    margin: 1rem;
+}
+
+.righttxt {
+    margin: 0.5rem auto;
+    width: 100%;
+}
+
+.righttxt h2 {
+    text-transform: capitalize;
+}
+
+.gramme {
+    text-transform: none;
+}
+
+span {
+    font-weight: normal;
+}
+
+.sousCard {
+    background: rgb(241, 241, 241);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sousCard1 {
+    background: rgb(241, 241, 241);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corresp {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.cardbottom {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #F1F1F1;
+    padding: 1rem;
+}
+
+.cardbottom h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.sousCard h2 {
+    text-transform: capitalize;
+}
+
+.vert {
+    background: #00803e8a;
+}
+
+.vertclair {
+    background: #88bd258d;
+}
+
+.jaune {
+    background: #ffcc008f;
+}
+
+.orange {
+    background: #ffa6007c;
+}
+
+.rouge {
+    background: #e6321293;
+}
+
+.gris {
+    background: #f1f1f195;
+}
+
+.txtvert {
+    color: green;
+}
+
+.txtvertclair {
+    color: greenyellow;
+}
+
+.txtjaune {
+    color: yellow;
+}
+
+.txtorange {
+    color: orange;
+}
+
+.txtrouge {
+    color: red;
+}
+
+.txtgris {
+    color: gray;
+}
+
+.txtc {
+    text-align: center;
+}
+
+.sousCard1 p {
+    text-align: center;
+}
+
+#product h1 {
+    /* text-align: center; */
+    font-size: 1.8rem;
+}
+
+@media (max-width:640px) {
+    body {
+        width: 100%;
+    }
+
+    .corresp {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .cardbottom h2 {
+        text-align: center;
+    }
+
+    .cardbottom {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1rem;
+    }
+
+    h2 span,
+    p {
+        font-size: 0.8rem;
+    }
+
+    .righttxt {
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+}
