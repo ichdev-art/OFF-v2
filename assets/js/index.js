@@ -142,6 +142,7 @@ fetch(`https://world.openfoodfacts.org/api/v2/product/${idProduit}`)
         document.querySelector(".rightnav").innerHTML = title
     })
 document.querySelector("#scan_button").addEventListener("click", function () {
+    document.querySelector(".containerV").style.display = "flex"
     let selectedDeviceId;
     const codeReader = new ZXing.BrowserMultiFormatReader();
     console.log("ZXing code reader initialized");
@@ -160,7 +161,6 @@ document.querySelector("#scan_button").addEventListener("click", function () {
                 sourceSelect.onchange = () => {
                     selectedDeviceId = sourceSelect.value;
                 };
-
                 const sourceSelectPanel = document.getElementById("sourceSelectPanel");
                 sourceSelectPanel.style.display = "block";
                 document.querySelector("#button_container").style.display = "block";
@@ -176,7 +176,6 @@ document.querySelector("#scan_button").addEventListener("click", function () {
                             document.getElementById("result").textContent = result.text;
                             document.querySelector("#nProduit").value = result.text;
                             document.getElementById("search_button").click()
-
                         }
                         if (err && !(err instanceof ZXing.NotFoundException)) {
                             console.error(err);
@@ -184,7 +183,6 @@ document.querySelector("#scan_button").addEventListener("click", function () {
                         }
                     }
                 );
-
                 console.log(
                     `Started continous decode from camera with id ${selectedDeviceId}`
                 );
