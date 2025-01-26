@@ -51,6 +51,7 @@
     border-radius: 5px;
     margin-right: 10%;
     margin-left: 10%;
+    width: 250px;
 }
 
 #button_container button {
@@ -82,14 +83,14 @@ h1,
 h2 {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #1A1A1A;
 }
 
 h2 span,
 p {
     font-family: "Nunito", sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #1A1A1A;
 }
 
